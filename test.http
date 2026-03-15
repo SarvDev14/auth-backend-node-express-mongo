@@ -1,0 +1,13 @@
+post http://localhost:3000/api/accounts
+Content-Type: application/json
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWI1Njc0Y2Y3YTQ1MTU2ZjVhZDFlNTEiLCJpYXQiOjE3NzM1NTY1ODgsImV4cCI6MTc3MzgxNTc4OH0.wuXzNW_biByhfHD-cCjEWah2-t0UP53jFm6zbpySCas
+
+{}
+
+# post http://localhost:3000/api/auth/login
+# Content-Type: application/json
+
+# {
+#     "email":"sarvkamt@gmail.com",
+#     "password":"test@123@"
+# }
