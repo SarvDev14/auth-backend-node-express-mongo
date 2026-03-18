@@ -1,8 +1,13 @@
-post http://localhost:3000/api/accounts
-Content-Type: application/json
-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWI1Njc0Y2Y3YTQ1MTU2ZjVhZDFlNTEiLCJpYXQiOjE3NzM1NTY1ODgsImV4cCI6MTc3MzgxNTc4OH0.wuXzNW_biByhfHD-cCjEWah2-t0UP53jFm6zbpySCas
+# post http://localhost:3000/api/transactions/system/initial-funds
+# Content-Type: application/json
 
-{}
+# {
+#     "toAccount": "69b693949ccbb8847c463c83",
+#     "amount": 1000,
+#     "idempotencyKey": "019cf332-fef3-7894-bbb8-924455c87c49"
+# }
+
+# get http://localhost:3000/api/accounts
 
 # post http://localhost:3000/api/auth/login
 # Content-Type: application/json
@@ -11,3 +16,43 @@ Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWI1Njc0Y2Y3Y
 #     "email":"sarvkamt@gmail.com",
 #     "password":"test@123@"
 # }
+
+# get http://localhost:3000/api/accounts/balance/69b832a0ae1899d1e1d88318
+
+# post http://localhost:3000/api/accounts
+# Content-Type: application/json
+
+# {
+#     "user": "69b835ceedb17ab12d793612",
+#     "accountType": "SAVINGS",
+#     "initialDeposit": 500,
+#         "idempotencyKey": "019cf332-fef3-7894-bbb8-924455c87c49"
+# }
+
+
+# post http://localhost:3000/api/auth/register
+# Content-Type: application/json
+
+# {
+#     "name":"mukund chandorkar",
+#     "email":"mukchand@gmail.com",
+#     "password":"test@123@"
+# }
+
+
+# post http://localhost:3000/api/transactions
+# Content-Type: application/json
+
+# {
+#     "fromAccount": "69b832a0ae1899d1e1d88318",
+#     "toAccount": "69b83607edb17ab12d793615",
+#     "amount": 100,
+#     "idempotencyKey": "019cf332-fef3-7894-bbb8-924455c87c49"
+# }
+
+
+post http://localhost:3000/api/auth/logout
+Content-Type: application/json
+
+
+
