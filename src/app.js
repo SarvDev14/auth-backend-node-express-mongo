@@ -10,6 +10,9 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser())
 
+app.get("/", (req, res)=>{
+    res.send("Welcome to the banking API")})
+
 app.use("/api/auth", authRouter) // all those request to the server starting with /api/auth are redirected tot the authRouter
 app.use("/api/accounts", accountRouter)
 app.use("/api/transactions", transactionRoutes)
